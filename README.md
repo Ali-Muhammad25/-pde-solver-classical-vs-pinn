@@ -24,8 +24,3 @@ The neural network approach is a Physics-Informed Neural Network (PINN), same as
 
 The Burgers' example is where the PINN struggles most, and I didn't tune it until that error disappeared. A basic PINN like this spends equal effort across the whole domain, so a small sharp feature in the middle of an otherwise easy problem is genuinely hard for it — that's a known, documented limitation, not something specific to this notebook. Real research-grade PINNs get around this with tricks like sampling more points near the sharp region, but that's a step beyond what's shown here. I think it's more useful to see this honestly than to quietly tune it away.
 
-## Running it
-
-Open in Colab and run all cells. PyTorch installs in the first cell. Training both PINNs takes a while — the Burgers' one in particular runs for 10,000 epochs, so give it a few minutes.
-
-[Open in Colab](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/pde_solver_classical_vs_pinn.ipynb)
